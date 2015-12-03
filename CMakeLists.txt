@@ -37,6 +37,9 @@ define_source_files ()
 # Setup target with resource copying
 setup_main_executable ()
 
+# Enable C++11
+#set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+
 # Setup test cases
 if (URHO3D_ANGELSCRIPT)
     setup_test (NAME ExternalLibAS OPTIONS Scripts/12_PhysicsStressTest.as -w)
