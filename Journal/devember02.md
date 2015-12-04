@@ -94,7 +94,7 @@ void Main::HandleKeyDown(StringHash event, VariantMap& eventData) {
 }
 ```
 
-After that step recreatinging of the build scripts is needed:
+After that step recreating of the build scripts is needed:
 
 ```bash
 cd $DEVEMBER2015_HOME
@@ -118,4 +118,4 @@ Also lines were added to the `.gitignore` file in order to ignore the backup fil
 bin/Urho3D.log
 ```
 
-Next, 3D objects will be displayed in out application window.
+Next, 3D objects will be displayed in our application window.
