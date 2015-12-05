@@ -66,12 +66,12 @@ void Main::CreateScene()
     Light* light = lightNode->CreateComponent<Light>();
     light->SetLightType(LIGHT_DIRECTIONAL);
 
-    Node* node = scene_->CreateChild("Mushroom");
-    node->SetPosition(Vector3(0.0f, 0.0f, 0.0f));
-    node->SetRotation(Quaternion(0.0f, 0.0f, 0.0f));
+    Node* node = scene_->CreateChild("ExampleModel");
+    node->SetPosition(Vector3(0.0f, -0.5f, 0.0f));
+    node->SetRotation(Quaternion(0.0f, 135.0f, 0.0f));
     StaticModel* object = node->CreateComponent<StaticModel>();
-    object->SetModel(cache->GetResource<Model>("Models/Mushroom.mdl"));
-    object->SetMaterial(cache->GetResource<Material>("Materials/Mushroom.xml"));
+    object->SetModel(cache->GetResource<Model>("Models/ExampleModel.mdl"));
+    object->SetMaterial(cache->GetResource<Material>("Materials/Material.xml"));
 
     cameraNode_ = scene_->CreateChild("Camera");
     cameraNode_->CreateComponent<Camera>();
